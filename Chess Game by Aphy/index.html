@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center><h2 style="font-family: Arial, Helvetica, sans-serif;">CHESS GAME</h2></center>
+<div style="text-align: center;
+ margin-bottom: 10px;">
+    <ul style="list-style-type: none; display: inline-flex; gap: 10px; align-items: center; padding: 0; margin: 0;">
+        <li><button id="startPositionBtn1">Reset</button></li>
+        <li><button id="startPositionBtn2" onclick="toggleMusic()">Music Off</button></li>
+    </ul>
+</div>
+<audio id="backgroundMusic" src="Chopin.mp3" preload="auto" loop></audio>
+<div id="board" class="board" style="width: 80%; "></div>
+<div class="info">
+    <label style="display:none;">Search depth:
+    <select id="search-depth">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+	</label>
+    <br>
+    <span style="font-size: 30px; width: 80%; margin-right: auto;">History :</span> 
+    <br>
+    <br>
+    <div id="move-history" class="move-history">
+    </div>
+</div>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/chessboardjs/js/chess.js"></script>
+<script src="lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+<script src="script.js"></script>
+<script>
+
+</script>
+</body>
+</html>
