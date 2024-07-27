@@ -1,0 +1,59 @@
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem; /* Ukuran font default */
+    margin: 0;
+}
+
+/* Style untuk tombol */
+button {
+    font-size: 1rem; /* Ukuran font default untuk tombol */
+    margin: px;
+    padding: 5px 20px; /* Padding default */
+}
+
+.board {
+    width: 400px;
+    margin: auto;
+}
+
+.info {
+    width: 400px;
+    margin: auto;
+}
+
+.move-history {
+    font-size: 2rem;
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+
+@media (max-width: 768px) {
+    /* Untuk layar dengan lebar maksimum 768px */
+    h2 {
+        font-size: 2rem; /* Ukuran font yang lebih kecil */
+    }
+
+    button {
+        font-size: 0.9rem; /* Ukuran font yang lebih kecil untuk tombol */
+        padding: 8px 16px; /* Padding yang lebih kecil */
+    }
+
+    .board {
+        width: 40%;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Untuk layar dengan lebar maksimum 480px */
+    h2 {
+        font-size: 50px; /* Ukuran font yang lebih kecil lagi */
+    }
+
+    button {
+        font-size: 0.8rem; /* Ukuran font yang lebih kecil lagi */
+        padding: 6px 12px; /* Padding yang lebih kecil lagi */
+    }
+
+}
